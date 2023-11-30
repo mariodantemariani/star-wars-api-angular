@@ -1,15 +1,30 @@
-# StarWarsChallenge
+# Star-wars
 
-<!--
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This project aims to create a simple web application that fetches data from an API and displays it in an organized manner. The chosen API is the Star Wars API (SWAPI), which provides various resources related to the Star Wars universe.
 
-## Development server
+## Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular 17.0.0.
+- HTML.
+- SCSS.
+- Typescript.
+- Jest (testing).
 
-## Code scaffolding
+## API Integration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For this project, we will be using the SWAPI API to retrieve data. The API documentation can be found here. You are free to choose any data from the API, but the "planet" resource is suggested for this task
+
+## Project Structure
+
+The projects follows the Angular best practices to development.
+
+## Getting Started
+
+To get started with this project, follow the steps below:
+
+- Clone the repository: git clone `https://github.com/mariodantemariani/star-wars-api-angular`.
+- Install the required dependencies: `npm install` or `pnpm install`.
+- run the development server: `ng serve` (the site will open on `http://localhost:4200/`).
 
 ## Build
 
@@ -17,12 +32,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. -->
+Run `npm run test:watch` to execute the unit tests. I suggest to use `npm run test:coverage` to have a better visualization of the test cases. For this project, I created the test using `Jest` instead of `karma` (`jasmine-karma` will be deprecated soon).
