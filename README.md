@@ -2,6 +2,8 @@
 
 This project aims to create a simple web application that fetches data from an API and displays it in an organized manner. The chosen API is the Star Wars API (SWAPI), which provides various resources related to the Star Wars universe.
 
+The project is responsive, which means it supports and adapts to different devices (web and - mobile phones).
+
 ## Technologies Used
 
 - Angular 17.0.0.
