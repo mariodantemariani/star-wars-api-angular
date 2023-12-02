@@ -1,0 +1,12 @@
+
+1. What's a closure? Where in the code is there a closure?
+ A closure is a function that has access to its own scope, the scope of the outer function, and the global scope. 
+ In my code, there are two functions that can be called as a 'clousures': getPlanets and getPlanetsByPage functions. 
+ These functions have access to the baseUrl and resourcePlanets variables defined in the outer function.
+
+2. Which are the potential side-effects in any function? Could you point out any of these cases in your code? Are they expected? Can they be avoided?
+Some potential side effects in a function include modifying global state, modifying external variables, and making asynchronous calls. 
+To avoid potential side effects, it is generally recommended to write pure functions that do not modify state outside of their own scope.
+- In the code, is there a  potential side effect when I make an HTTP request using the http service. This is expected behavior for an API service and cannot be avoided if you want to retrieve data from an external source. 
+- In additional to that, I recommend to use external files where you can write your URLs (in this case baseUrl and resourcePlanets) and mark them as readOnly to avoid accidantaly re-writing the URLs.
+
